@@ -15,7 +15,7 @@ body {
   margin-bottom: 65px;
 }
 .first-block {
-  margin-right: 50px;
+  padding-right: 50px;
 }
 .rating-marker {
   color: #fff;
@@ -40,6 +40,11 @@ body {
   border: 1px solid #939292;
   border-radius: 10px;
   padding: 14px 0;
+
+  padding-left: 104px;
+  background-image: url(../img/top5-o.png);
+  background-repeat: no-repeat;
+  background-position: 35px center;
 }
 .rating-marker_top img {
   display: inline-block;
@@ -50,7 +55,7 @@ body {
   color: #fdd79b;
   display: inline-block;
   font-size: 15px;
-  width: 272px;
+  padding-right: 20px;
   text-align: left;
 }
 .feed-stars {
@@ -216,9 +221,7 @@ body {
   background-image: url(../img/diplom.png);
   width: 130px;
   height: 180px;
-  position: relative;
-  top: -45px;
-  left: 60px;
+  margin: 0 0 0 auto;
 }
 .revworld__head {
   margin-bottom: 25px;
