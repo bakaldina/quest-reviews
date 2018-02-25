@@ -10,7 +10,13 @@ body {
 .desktop {
   display: block;
 }
-
+.tab-rating_content-title {
+  font-size: 36px;
+  margin-bottom: 65px;
+}
+.first-block {
+  margin-right: 50px;
+}
 .rating-marker {
   color: #fff;
   max-width: 520px;
@@ -54,6 +60,9 @@ body {
 .text-size {
   font-size: 36px;
 }
+.text-light {
+  font-weight: 100;
+}
 
 .rating-marker__number {
   display: inline-block;
@@ -72,7 +81,15 @@ body {
 }
 
 .rating-marker__stats {
-  margin: 15px 0 40px;
+  margin: 15px 0 0 0;
+  height: 130px;
+}
+.quantity {
+  position: absolute;
+  top: 133px;
+  left: 473px;
+  font-size: 14px;
+  color: #939292;
 }
 .marker-stat__firstline {
   color: #fff;
@@ -112,6 +129,7 @@ body {
   color: #939292;
 }
 .block-star {
+  position: relative;
   border-left: 1px solid #939292;
   margin-bottom: 35px;
 }
@@ -195,16 +213,36 @@ body {
 .grey-text {
   color: #a4a6a8;
 }
+.diplom {
+  background-image: url(../img/diplom.png);
+  width: 130px;
+  height: 180px;
+  position: relative;
+  top: -45px;
+  left: 60px;
+}
 .revworld__head {
   margin-bottom: 25px;
+  font-size: 18px;
 }
 .revworld__item {
   margin-bottom: 45px;
 }
+.revbuble_date {
+  margin: 5px 0 15px 0;
+  font-weight: 100;
+  font-size: 14px;
+}
+.revbuble_date img {
+  vertical-align: baseline;
+}
+.revbuble_date-phone {
+  padding-left: 20px;
+}
 .revworld__item__bubble.revbubble {
   background-color: #dedede;
   border-radius: 10px;
-  padding: 40px 20px;
+  padding: 20px 25px 30px 25px;
   position: relative;
   color: #000;
   margin-bottom: 20px;
@@ -216,13 +254,21 @@ body {
   position: absolute;
   top: 100%;
 }
+.revadvisor {
+  border-left: 1px solid #4c4c4c;
+  padding-left: 30px;
+}
 .revadvisor_item {
-  padding-bottom: 26px;
+  padding-bottom: 47px;
   margin-bottom: 26px;
   border-bottom: 1px solid #4c4c4c;
 }
+.revadvisor_item:last-child {
+  border-bottom: none;
+}
 .revadvisor__head {
   margin-bottom: 20px;
+  font-size: 18px;
 }
 .revadvisor_item__date {
   font-size: 12px;
@@ -232,6 +278,7 @@ body {
 .revadvisor_item__head {
   font-size: 16px;
   margin-bottom: 16px;
+  margin-top: 5px;
   font-weight: 400;
 }
 .revadvisor_item__text {
@@ -239,6 +286,7 @@ body {
   font-weight: 100;
   line-height: 22px;
   margin-bottom: 10px;
+  text-overflow: ellipsis;
 }
 .revadvisor_item__author {
   font-size: 15px;
@@ -251,7 +299,7 @@ body {
   width: 19px;
   display: inline-block;
   vertical-align: middle;
-  background: url(../img/newpage/circle-green.png);
+  background: url(../img/circle-green.png);
   margin-right: 10px;
 }
 
@@ -271,7 +319,27 @@ body {
   color: #0093dd;
   font-size: 15px;
 }
-
+.revbuble_text {
+  font-weight: 100;
+}
+.booking-more {
+  color: #ff6600;
+  display: block;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 70px;
+}
+.booking-more:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-left: 2px solid #ff6600;
+  border-bottom: 2px solid #ff6600;
+  transform: rotate(-45deg) translate(8px, 4px);
+}
 @media (max-width: 768px) {
   .desktop {
     display: none;
