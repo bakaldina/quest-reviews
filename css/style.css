@@ -85,11 +85,10 @@ body {
   height: 130px;
 }
 .quantity {
-  position: absolute;
-  top: 133px;
-  left: 473px;
+  float: right;
   font-size: 14px;
   color: #939292;
+  padding-right: 15px;
 }
 .marker-stat__firstline {
   color: #fff;
