@@ -10,10 +10,18 @@
     <link rel="stylesheet" href="css/bootstrap.modal.min.css">
     <link rel="stylesheet" href="css/bootstrap.animations.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+
 </head>
 
 <body>
     <section class="contacts desktop container">
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">Квесты в Уфе</a>
+            </li>
+            <li class="breadcrumb__active">Отзывы</li>
+        </ul>
         <div id="Rating" class="tab-pane tab-rating">
             <div class="tab-rating_content">
                 <h1 class="tab-rating_content-title">Отзывы об играх в Уфе</h1>
@@ -414,214 +422,265 @@
                     </div>
 
                     <div class="col-sm-2  mobile-hide">
-                        <div class="diplom"></div>
+                        <div class="diplom" onclick="modalOpen()"></div>
                     </div>
 
                     <div class="col-sm-12">
-                        <div class="col-sm-8">
-                            <div class="revworld">
-                                <div class="revworld__head">Отзывы игроков QuestQuest</div>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="revworld__item">
-                                            <div class="revworld__item__bubble revbubble">
-                                                <div class="revbuble_stars">
-                                                    <div class="feed-stars feed-stars-green">
-                                                        <picture>
-                                                            <source type="image/svg+xml" srcset="img/star_green.svg">
-                                                            <img src="img/star-green.png" alt="Звезда">
-                                                        </picture>
-                                                        <picture>
-                                                            <source type="image/svg+xml" srcset="img/star_green.svg">
-                                                            <img src="img/star-green.png" alt="Звезда">
-                                                        </picture>
-                                                        <picture>
-                                                            <source type="image/svg+xml" srcset="img/star_green.svg">
-                                                            <img src="img/star-green.png" alt="Звезда">
-                                                        </picture>
-                                                        <picture>
-                                                            <source type="image/svg+xml" srcset="img/star_green.svg">
-                                                            <img src="img/star-green.png" alt="Звезда">
-                                                        </picture>
-                                                        <picture>
-                                                            <source type="image/svg+xml" srcset="img/star_green.svg">
-                                                            <img src="img/star-green.png" alt="Звезда">
-                                                        </picture>
-                                                    </div>
-                                                </div>
-                                                <div class="revbuble_date">
-                                                    <img src="img/time_ago.png" alt="Часы"> 09.01.2018
-                                                    <span class="revbuble_date-phone">+790****6571</span>
-                                                </div>
-                                                <div class="revbuble_text">
-                                                    Были небольшие неполадки с магнитной дверью квеста,но администратор быстро смогла подготовить другой,так что мы остались
-                                                    довольны :)
+                        <div class="revworld">
+                            <div class="revworld__head">Отзывы игроков QuestQuest</div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="revworld__item">
+                                        <div class="revworld__item__bubble revbubble">
+                                            <div class="revbuble_stars">
+                                                <div class="feed-stars feed-stars-green">
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
                                                 </div>
                                             </div>
-                                            <div class="revworld__item__author">
-                                                Эдуард Чен
-                                                <span class="text-light">(любитель)</span>
+                                            <div class="revbuble_date">
+                                                <img src="img/time_ago.png" alt="Часы"> 09.01.2018
+                                                <span class="revbuble_date-phone">+790****6571</span>
+                                            </div>
+                                            <div class="revbuble_text">
+                                                Были небольшие неполадки с магнитной дверью квеста,но администратор быстро смогла подготовить другой,так что мы остались
+                                                довольны :)
                                             </div>
                                         </div>
-                                        <div class="revworld__item">
-                                            <div class="revworld__item__bubble revbubble">
-                                                <div class="revbuble_stars">
-                                                    <div class="feed-stars">
-                                                        <picture>
-                                                            <source type="image/svg+xml" srcset="img/star_green.svg">
-                                                            <img src="img/star-green.png" alt="Звезда">
-                                                        </picture>
-                                                        <picture>
-                                                            <source type="image/svg+xml" srcset="img/star_green.svg">
-                                                            <img src="img/star-green.png" alt="Звезда">
-                                                        </picture>
-                                                        <picture>
-                                                            <source type="image/svg+xml" srcset="img/star_green.svg">
-                                                            <img src="img/star-green.png" alt="Звезда">
-                                                        </picture>
-                                                        <picture>
-                                                            <source type="image/svg+xml" srcset="img/star_green.svg">
-                                                            <img src="img/star-green.png" alt="Звезда">
-                                                        </picture>
-                                                        <picture>
-                                                            <source type="image/svg+xml" srcset="img/star_green.svg">
-                                                            <img src="img/star-green.png" alt="Звезда">
-                                                        </picture>
-                                                    </div>
-                                                </div>
-                                                <div class="revbuble_date">
-                                                    <img src="img/time_ago.png" alt="Часы"> 09.01.2018
-                                                    <span class="revbuble_date-phone">+790****6571</span>
-                                                </div>
-                                                <div class="revbuble_text">
-                                                    Были небольшие неполадки с магнитной дверью квеста,но администратор быстро смогла подготовить другой,так что мы остались
-                                                    довольны :)
-                                                </div>
-                                            </div>
-                                            <div class="revworld__item__author">
-                                                Эдуард Чен
-                                                <span class="text-light">(любитель)</span>
-                                            </div>
+                                        <div class="revworld__item__author">
+                                            Эдуард Чен
+                                            <span class="text-light">(любитель)</span>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <div class="revworld__item">
-                                            <div class="revworld__item__bubble revbubble">
-                                                <div class="revbuble_stars">
-                                                    <div class="feed-stars">
-                                                        <picture>
-                                                            <source type="image/svg+xml" srcset="img/star_green.svg">
-                                                            <img src="img/star-green.png" alt="Звезда">
-                                                        </picture>
-                                                        <picture>
-                                                            <source type="image/svg+xml" srcset="img/star_green.svg">
-                                                            <img src="img/star-green.png" alt="Звезда">
-                                                        </picture>
-                                                        <picture>
-                                                            <source type="image/svg+xml" srcset="img/star_green.svg">
-                                                            <img src="img/star-green.png" alt="Звезда">
-                                                        </picture>
-                                                        <picture>
-                                                            <source type="image/svg+xml" srcset="img/star_green.svg">
-                                                            <img src="img/star-green.png" alt="Звезда">
-                                                        </picture>
-                                                        <picture>
-                                                            <source type="image/svg+xml" srcset="img/star_green.svg">
-                                                            <img src="img/star-green.png" alt="Звезда">
-                                                        </picture>
-                                                    </div>
-                                                </div>
-                                                <div class="revbuble_date">
-                                                    <img src="img/time_ago.png" alt="Часы"> 09.01.2018
-                                                    <span class="revbuble_date-phone">+790****6571</span>
-                                                </div>
-                                                <div class="revbuble_text">
-                                                    Были небольшие неполадки с магнитной дверью квеста,но администратор быстро смогла подготовить другой,так что мы остались
-                                                    довольны :)
+                                    <div class="revworld__item">
+                                        <div class="revworld__item__bubble revbubble">
+                                            <div class="revbuble_stars">
+                                                <div class="feed-stars">
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
                                                 </div>
                                             </div>
-                                            <div class="revworld__item__author">
-                                                Эдуард Чен
-                                                <span class="text-light">(любитель)</span>
+                                            <div class="revbuble_date">
+                                                <img src="img/time_ago.png" alt="Часы"> 09.01.2018
+                                                <span class="revbuble_date-phone">+790****6571</span>
+                                            </div>
+                                            <div class="revbuble_text">
+                                                Были небольшие неполадки с магнитной дверью квеста,но администратор быстро смогла подготовить другой,так что мы остались
+                                                довольны :)
                                             </div>
                                         </div>
-                                        <div class="revworld__item">
-                                            <div class="revworld__item__bubble revbubble">
-                                                <div class="revbuble_stars">
-                                                    <div class="feed-stars">
-                                                        <picture>
-                                                            <source type="image/svg+xml" srcset="img/star_green.svg">
-                                                            <img src="img/star-green.png" alt="Звезда">
-                                                        </picture>
-                                                        <picture>
-                                                            <source type="image/svg+xml" srcset="img/star_green.svg">
-                                                            <img src="img/star-green.png" alt="Звезда">
-                                                        </picture>
-                                                        <picture>
-                                                            <source type="image/svg+xml" srcset="img/star_green.svg">
-                                                            <img src="img/star-green.png" alt="Звезда">
-                                                        </picture>
-                                                        <picture>
-                                                            <source type="image/svg+xml" srcset="img/star_green.svg">
-                                                            <img src="img/star-green.png" alt="Звезда">
-                                                        </picture>
-                                                        <picture>
-                                                            <source type="image/svg+xml" srcset="img/star_green.svg">
-                                                            <img src="img/star-green.png" alt="Звезда">
-                                                        </picture>
-                                                    </div>
+                                        <div class="revworld__item__author">
+                                            Эдуард Чен
+                                            <span class="text-light">(любитель)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="revworld__item">
+                                        <div class="revworld__item__bubble revbubble">
+                                            <div class="revbuble_stars">
+                                                <div class="feed-stars">
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
                                                 </div>
-                                                <div class="revbuble_date">
-                                                    <img src="img/time_ago.png" alt="Часы"> 09.01.2018
-                                                    <span class="revbuble_date-phone">+790****6571</span>
+                                            </div>
+                                            <div class="revbuble_date">
+                                                <img src="img/time_ago.png" alt="Часы"> 09.01.2018
+                                                <span class="revbuble_date-phone">+790****6571</span>
+                                            </div>
+                                            <div class="revbuble_text">
+                                                Были небольшие неполадки с магнитной дверью квеста,но администратор быстро смогла подготовить другой,так что мы остались
+                                                довольны :)
+                                            </div>
+                                        </div>
+                                        <div class="revworld__item__author">
+                                            Эдуард Чен
+                                            <span class="text-light">(любитель)</span>
+                                        </div>
+                                    </div>
+                                    <div class="revworld__item">
+                                        <div class="revworld__item__bubble revbubble">
+                                            <div class="revbuble_stars">
+                                                <div class="feed-stars">
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
                                                 </div>
+                                            </div>
+                                            <div class="revbuble_date">
+                                                <img src="img/time_ago.png" alt="Часы"> 09.01.2018
+                                                <span class="revbuble_date-phone">+790****6571</span>
+                                            </div>
 
-                                                <div class="revbuble_text">
-                                                    Были небольшие неполадки с магнитной дверью квеста,но администратор быстро смогла подготовить другой,так что мы остались
-                                                    довольны :)
+                                            <div class="revbuble_text">
+                                                Были небольшие неполадки с магнитной дверью квеста,но администратор быстро смогла подготовить другой,так что мы остались
+                                                довольны :)
+                                            </div>
+                                        </div>
+                                        <div class="revworld__item__author">
+                                            Эдуард Чен
+                                            <span class="text-light">(любитель)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="revworld__item">
+                                        <div class="revworld__item__bubble revbubble">
+                                            <div class="revbuble_stars">
+                                                <div class="feed-stars">
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
                                                 </div>
                                             </div>
-                                            <div class="revworld__item__author">
-                                                Эдуард Чен
-                                                <span class="text-light">(любитель)</span>
+                                            <div class="revbuble_date">
+                                                <img src="img/time_ago.png" alt="Часы"> 09.01.2018
+                                                <span class="revbuble_date-phone">+790****6571</span>
                                             </div>
+                                            <div class="revbuble_text">
+                                                Были небольшие неполадки с магнитной дверью квеста,но администратор быстро смогла подготовить другой,так что мы остались
+                                                довольны :)
+                                            </div>
+                                        </div>
+                                        <div class="revworld__item__author">
+                                            Эдуард Чен
+                                            <span class="text-light">(любитель)</span>
+                                        </div>
+                                    </div>
+                                    <div class="revworld__item">
+                                        <div class="revworld__item__bubble revbubble">
+                                            <div class="revbuble_stars">
+                                                <div class="feed-stars">
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
+                                                    <picture>
+                                                        <source type="image/svg+xml" srcset="img/star_green.svg">
+                                                        <img src="img/star-green.png" alt="Звезда">
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                            <div class="revbuble_date">
+                                                <img src="img/time_ago.png" alt="Часы"> 09.01.2018
+                                                <span class="revbuble_date-phone">+790****6571</span>
+                                            </div>
+
+                                            <div class="revbuble_text">
+                                                Были небольшие неполадки с магнитной дверью квеста,но администратор быстро смогла подготовить другой,так что мы остались
+                                                довольны :)
+                                            </div>
+                                        </div>
+                                        <div class="revworld__item__author">
+                                            Эдуард Чен
+                                            <span class="text-light">(любитель)</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-sm-4">
-                            <div class="revadvisor">
-                                <div class="revadvisor__head">
-                                    Отзывы Tripadvisor
-                                </div>
-                                <div class="revadvisor_item">
-                                    <div class="revadvisor_item__date">
-                                        <span class="revadvisor-ico revadvisor-ico--fivestars"></span> Отзыв написан 10 января 2017</div>
-                                    <div class="revadvisor_item__head">Интересный вечер получился</div>
-                                    <div class="revadvisor_item__text">
-                                        Это был не первый квест, где мы играли нашей компанией. Новичков среди нас не было, сравнивать есть с чем. Мы играли вчетвером,
-                                        у каждого конечно сформировались уже свои предпочтения, кому-то логических загадок
-                                        ...
-                                        <a href="#">Eще</a>
-                                    </div>
-                                    <div class="revadvisor_item__author">foksil6</div>
-                                </div>
 
-                                <div class="revadvisor_item">
-                                    <div class="revadvisor_item__date">
-                                        <span class="revadvisor-ico revadvisor-ico--fivestars"></span> Отзыв написан 8 января 2017</div>
-                                    <div class="revadvisor_item__head">Космическое приключение</div>
-                                    <div class="revadvisor_item__text">
-                                        Этот квест завораживает! я считаю, что на данный момент он лучший в Воронеже! Находясь в квесте и разгадывая запутанные,
-                                        но безумно интересные загадки ты полностью погружаешься в ...
-                                        <a href="#">Eще</a>
-                                    </div>
-                                    <div class="revadvisor_item__author">foksil6</div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="col-sm-12">
                             <span class="booking-more">Еще отзывы</span>
                         </div>
@@ -877,7 +936,22 @@
             </div>
             <span class="booking-more">Еще отзывы</span>
         </div>
+        <div class="modals">
+            <div class="modals__overlay" onclick="modalClose()">
+            </div>
+            <div class="modals__content">
+                <div id="diplom_large"></div>
+            </div>
+        </div>
     </section>
+    <script>
+        function modalOpen() {
+            $(".modals").show();
+        }
+
+        function modalClose() {
+            $(".modals").hide();
+        }</script>
 </body>
 
 </html>

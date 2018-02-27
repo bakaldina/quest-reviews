@@ -10,6 +10,25 @@ body {
 .desktop-hide {
   display: none;
 }
+ul.breadcrumb {
+  padding: 0;
+  margin: 45px 0;
+  font-size: 14px;
+}
+.breadcrumb li {
+  display: inline-block;
+}
+.breadcrumb li a {
+color: #939292;
+}
+.breadcrumb__active {
+  color: #ff711b;
+}
+.breadcrumb__active:before {
+  color: #cccccc;
+  content: "/";
+  padding: 0 10px;
+}
 .tab-rating_content-title {
   font-size: 36px;
   margin-bottom: 65px;
@@ -222,6 +241,36 @@ body {
   width: 130px;
   height: 180px;
   margin: 0 0 0 auto;
+  cursor: pointer;
+}
+#diplom_large {
+  background-image: url(../img/diplom_large.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 640px;
+}
+.modals {
+  display: none;
+  position: fixed;
+  width: 500px;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+}
+.modals__content {
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  position: relative;
+}
+.modals__overlay {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .revworld__head {
   margin-bottom: 25px;
@@ -256,71 +305,7 @@ body {
   position: absolute;
   top: 100%;
 }
-.revadvisor {
-  border-left: 1px solid #4c4c4c;
-  padding-left: 30px;
-}
-.revadvisor_item {
-  padding-bottom: 47px;
-  margin-bottom: 26px;
-  border-bottom: 1px solid #4c4c4c;
-}
-.revadvisor_item:last-child {
-  border-bottom: none;
-}
-.revadvisor__head {
-  margin-bottom: 20px;
-  font-size: 18px;
-}
-.revadvisor_item__date {
-  font-size: 12px;
-  font-weight: 100;
-  color: #ababab;
-}
-.revadvisor_item__head {
-  font-size: 16px;
-  margin-bottom: 16px;
-  margin-top: 5px;
-  font-weight: 400;
-}
-.revadvisor_item__text {
-  font-size: 15px;
-  font-weight: 100;
-  line-height: 22px;
-  margin-bottom: 10px;
-  text-overflow: ellipsis;
-}
-.revadvisor_item__author {
-  font-size: 15px;
-  font-weight: 100;
-  line-height: 24px;
-  color: #ababab;
-}
-.revadvisor-ico {
-  height: 19px;
-  width: 19px;
-  display: inline-block;
-  vertical-align: middle;
-  background: url(../img/circle-green.png);
-  margin-right: 10px;
-}
 
-.revadvisor-ico--twostars {
-  width: 38px;
-}
-.revadvisor-ico--threestars {
-  width: 57px;
-}
-.revadvisor-ico--fourstars {
-  width: 76px;
-}
-.revadvisor-ico--fivestars {
-  width: 95px;
-}
-.revadvisor_item__text a {
-  color: #0093dd;
-  font-size: 15px;
-}
 .revbuble_text {
   font-weight: 100;
 }
@@ -342,6 +327,7 @@ body {
   border-bottom: 2px solid #ff6600;
   transform: rotate(-45deg) translate(8px, 4px);
 }
+
 @media (max-width: 768px) {
   .mobile-hide {
     display: none;
